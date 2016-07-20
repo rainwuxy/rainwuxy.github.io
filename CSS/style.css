@@ -1,4 +1,8 @@
 @CHARSET "UTF-8";
+*{
+    margin:0;
+    padding: 0;
+}
 body{
     margin:0 auto;
     font-family: "Microsoft YaHei";
@@ -82,7 +86,7 @@ a:hover,a:focus{
     width: 100%;
 }
 .menu-bar li:hover{
-    border-bottom:2.5px solid #fff;
+    border-bottom:3px solid #fff;
 }
 
 /* Index */
@@ -91,6 +95,8 @@ a:hover,a:focus{
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    float: none;
 }
 
 /* 影评页 */
@@ -107,7 +113,7 @@ a:hover,a:focus{
 	transition:0.2s ease-out;
 }
 .article a:hover{
-    color: #181818;
+    color: #142837;
 	/* -webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 	-o-transform:scale(1.1);
@@ -211,13 +217,13 @@ a:hover,a:focus{
 /* 关于 */
 #portrait{
     width: 235px;
-    float: left;
+    display: inline-block;
 }
 .resume{
-    float: left;
     margin-top: 40px;
     margin-left: 40px;
     color: #525252;
+    display: inline-block;
 }
 .resume p.name{
     font-size: 25px;
@@ -228,27 +234,30 @@ a:hover,a:focus{
 
 /* 底部 */
 .foot{
-    margin:10px 0 auto;
-    color:white;
+    width: 70%;
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+.links{
+    margin:0 auto;
+    width: 25%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.links a{
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+.links > a > span{
+    display: inline-block;
     width: 100%;
-    height: 210px;
-    position: absolute;
-    background-color: #21446a;
 }
-.foot .about-us{
-    margin: 20px auto;
-    width:1000px;
+.links > a > span{
+    color: #437280;
 }
-.foot h2{
-    font-size:25px;
-    padding-bottom:10px;
+.links > a > span:hover{
+    color: #56a4c0;
 }
-.foot h4{
-    float:left;
-    display:inline-block;
-}
-.foot small{
-    float:left;
-    margin-left:10px;
-    display:inline-block;
-}
+
