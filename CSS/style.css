@@ -3,7 +3,15 @@
     margin:0;
     padding: 0;
 }
+html{
+	width:100%;
+	overflow-x:hidden;
+}
 body{
+	/* width:100%;
+	height:auto;
+	position:fixed; */
+	overflow:auto;
     margin:0 auto;
     font-family: "Microsoft YaHei";
     -webkit-font-smoothing: antialiased;
@@ -92,7 +100,6 @@ a:hover,a:focus{
 .st-container>a{
 	z-index:102;
 	font-size:18px;
-	line-height:26px;
 	background:transparent;
 	text-align:center;
 	color:#fff;
@@ -304,6 +311,7 @@ a:hover,a:focus{
     border-top: solid 1px #c0c0c0;
     text-indent: 2em;
     line-height: 25px;
+	font-size:14px;
 }
 
 /* ¹ØÓÚ */
@@ -332,7 +340,6 @@ a:hover,a:focus{
 	position:absolute;
 	top:280px;
 	left:15%;
-	background:transparent;
 	-webkit-backface-visibility:hidden;
 	-moz-transition:all 0.1s ease-in-out;
 	-o-transition:all 0.1s ease-in-out;
@@ -399,6 +406,12 @@ a:hover,a:focus{
 		font-size:22px;
 	}
 	.content p{
+		font-size:10px;
+	}
+	.work-wrap .time{
+		font-size:10px;
+	}
+	.work-wrap .description{
 		font-size:10px;
 	}
 	.links{
